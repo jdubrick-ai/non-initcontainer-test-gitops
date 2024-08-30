@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: non-initcontainer-test 
+  janus-idp.io/tekton: non-initcontainer-test
+  backstage.io/kubernetes-id: non-initcontainer-test
+  backstage.io/kubernetes-namespace: rhdh-app 
+  app.kubernetes.io/part-of: non-initcontainer-test
+resources: 
+- application-dev.yaml
